@@ -9,16 +9,16 @@
 import UIKit
 import AVFoundation
 
-// Response portion of the app
+// Response portion of the app.
+// TODO: Rethink categories.
 class SecondViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UISearchBarDelegate
 {
-    
-    //TODO: implement searchBarSearchButtonClicked
-    
+    // TODO: When someone has a text string of "", if first responder is removed, populate with all.
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
     var soundList : AudioList!
     
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var viewController: UICollectionView!
     
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
@@ -41,21 +41,28 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
         {
             // Clears the loaded array in case it's populated. Then populates based off of the imageIcon filename.
         case 0: // All
+            // Clears the searchbar.
+            searchBar.text = ""
             soundList.clearLoadedArray()
             soundList.loadResponseArrayExceptions()
         case 1: // Johnny
+            searchBar.text = ""
             soundList.clearLoadedArray()
             soundList.loadResponseArray(segmentedControl.titleForSegmentAtIndex(1)!)
         case 2: // Lisa
+            searchBar.text = ""
             soundList.clearLoadedArray()
             soundList.loadResponseArray(segmentedControl.titleForSegmentAtIndex(2)!)
         case 3: // Mark
+            searchBar.text = ""
             soundList.clearLoadedArray()
             soundList.loadResponseArray(segmentedControl.titleForSegmentAtIndex(3)!)
         case 4: // Denny
+            searchBar.text = ""
             soundList.clearLoadedArray()
             soundList.loadResponseArray(segmentedControl.titleForSegmentAtIndex(4)!)
         case 5: // Others
+            searchBar.text = ""
             soundList.clearLoadedArray()
             soundList.loadResponseArray(segmentedControl.titleForSegmentAtIndex(5)!)
         default:
@@ -63,13 +70,15 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
             soundList.loadResponseArrayExceptions()
             println("Segmented controls: Default was loaded")
         }
+        self.view.endEditing(true)
         viewController.reloadData()
     }
-    // Upon touching a part of the View, resign all first responders. Note that touching the UICollectionView
-    // does not fall under this method.
+    // Upon touching a part of the View, resign all first responders. Note that touching the UICollectionView does not fall under this method.
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        super.touchesBegan(touches, withEvent: event)
         self.view.endEditing(true)
     }
+    
     // Called via setNeedsStatusBarAppearanceUpdate, and returns the LightContent value of the status bar.
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
@@ -101,6 +110,7 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
     @IBAction func Category(sender: UISegmentedControl) {
         reloadLoadedArrays()
     }
+    // The controller will pass a task of mutating the favorites to the dataSource.
     internal func mutateFavorites(newObj: AudioObject) {
         soundList.setFavArray(newObj)
     }

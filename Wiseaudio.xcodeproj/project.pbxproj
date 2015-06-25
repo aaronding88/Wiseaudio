@@ -22,6 +22,8 @@
 		F96403741B02DAF000F30F89 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96403731B02DAF000F30F89 /* CollectionViewCell.swift */; };
 		F96403761B02E17600F30F89 /* tommy_wiseau.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F96403751B02E17600F30F89 /* tommy_wiseau.jpg */; };
 		F9652A0E1B0D667200ABAF95 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9652A0D1B0D667200ABAF95 /* Images.xcassets */; };
+		F9657F651B3BC46D0016BBC0 /* ResponseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9657F641B3BC46D0016BBC0 /* ResponseCollectionView.swift */; };
+		F9657F671B3BD01F0016BBC0 /* QuotesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9657F661B3BD01F0016BBC0 /* QuotesCollectionView.swift */; };
 		F98257241B093CF300D0456D /* Claudette.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F982571D1B093CF300D0456D /* Claudette.jpg */; };
 		F98257251B093CF300D0456D /* Denny.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F982571E1B093CF300D0456D /* Denny.jpg */; };
 		F98257261B093CF300D0456D /* Friend01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F982571F1B093CF300D0456D /* Friend01.jpg */; };
@@ -123,6 +125,8 @@
 		F96403731B02DAF000F30F89 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		F96403751B02E17600F30F89 /* tommy_wiseau.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tommy_wiseau.jpg; sourceTree = "<group>"; };
 		F9652A0D1B0D667200ABAF95 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
+		F9657F641B3BC46D0016BBC0 /* ResponseCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseCollectionView.swift; sourceTree = "<group>"; };
+		F9657F661B3BD01F0016BBC0 /* QuotesCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesCollectionView.swift; sourceTree = "<group>"; };
 		F982571D1B093CF300D0456D /* Claudette.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Claudette.jpg; sourceTree = "<group>"; };
 		F982571E1B093CF300D0456D /* Denny.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Denny.jpg; sourceTree = "<group>"; };
 		F982571F1B093CF300D0456D /* Friend01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Friend01.jpg; sourceTree = "<group>"; };
@@ -351,6 +355,8 @@
 				F95DCB3C1B05AD310093E0C7 /* FavoriteViewCell.swift */,
 				F91600691B15888800F09137 /* QuotesCollectionViewCell.swift */,
 				F96403731B02DAF000F30F89 /* CollectionViewCell.swift */,
+				F9657F641B3BC46D0016BBC0 /* ResponseCollectionView.swift */,
+				F9657F661B3BD01F0016BBC0 /* QuotesCollectionView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -561,12 +567,14 @@
 				F964020B1B003A4400F30F89 /* SecondViewController.swift in Sources */,
 				F96402351B01D56600F30F89 /* AudioObject.swift in Sources */,
 				F96403741B02DAF000F30F89 /* CollectionViewCell.swift in Sources */,
+				F9657F671B3BD01F0016BBC0 /* QuotesCollectionView.swift in Sources */,
 				F96402071B003A4400F30F89 /* AppDelegate.swift in Sources */,
 				F916006A1B15888800F09137 /* QuotesCollectionViewCell.swift in Sources */,
 				F95DCB3D1B05AD310093E0C7 /* FavoriteViewCell.swift in Sources */,
 				F96402091B003A4400F30F89 /* FirstViewController.swift in Sources */,
 				F91600681B15885100F09137 /* ThirdViewController.swift in Sources */,
 				F96402941B02BFD400F30F89 /* AudioList.swift in Sources */,
+				F9657F651B3BC46D0016BBC0 /* ResponseCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,9 +704,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TheRoomAudiotexts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = Wiseaudio;
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -709,9 +719,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TheRoomAudiotexts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = Wiseaudio;
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

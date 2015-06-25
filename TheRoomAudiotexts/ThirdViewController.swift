@@ -8,12 +8,13 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class ThirdViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UISearchBarDelegate {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
+    @IBOutlet weak var searchBar: UISearchBar!
     
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
@@ -24,21 +25,27 @@ class ThirdViewController: UIViewController, UICollectionViewDataSource, UIColle
         {
             // Clears the loaded array in case it's populated. Then populates based off of the imageIcon filename.
         case 0: // All
+            searchBar.text = ""
             soundList.clearLoadedArray()
             soundList.loadQuotesArrayExceptions(true)
         case 1: // Johnny
+            searchBar.text = ""
             soundList.clearLoadedArray()
             soundList.loadQuotesArray("JohnnyIcon.png")
         case 2: // Lisa
+            searchBar.text = ""
             soundList.clearLoadedArray()
             soundList.loadQuotesArray("LisaIcon.png")
         case 3: // Mark
+            searchBar.text = ""
             soundList.clearLoadedArray()
             soundList.loadQuotesArray("MarkIcon.png")
         case 4: // Denny
+            searchBar.text = ""
             soundList.clearLoadedArray()
             soundList.loadQuotesArray("DennyIcon.png")
         case 5: // Others
+            searchBar.text = ""
             soundList.clearLoadedArray()
             soundList.loadQuotesArrayExceptions(false)
         default:
@@ -46,6 +53,20 @@ class ThirdViewController: UIViewController, UICollectionViewDataSource, UIColle
             soundList.loadQuotesArrayExceptions(true)
             println("Segmented controls: Default was loaded")
         }
+        collectionView.reloadData()
+    }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        // Function already searched via searchBar, so all we have to do is relinquish first-responder.
+        searchBar.resignFirstResponder()
+    }
+    
+    // Main Search function, allowing users to search using input.
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        // searchAudio should clear current loadedArray, then populate the list with searched text.
+        soundList.searchAudio(searchText)
+        
+        // Refreshes the list so items display.
         collectionView.reloadData()
     }
     
@@ -74,7 +95,6 @@ class ThirdViewController: UIViewController, UICollectionViewDataSource, UIColle
         self.setNeedsStatusBarAppearanceUpdate()
         
         // Clears the loaded array, and adds all the audio.
-        //#TODO: Will need to change how AudioList works for this to be effective.
         soundList.clearLoadedArray()
         soundList.loadQuotesArrayExceptions(true)
     }
@@ -84,7 +104,6 @@ class ThirdViewController: UIViewController, UICollectionViewDataSource, UIColle
         // Dispose of any resources that can be recreated.
     }
     
-    //#TODO: Currently functions the SAME as SecondViewController. Adapt audiolist to work with specialized quotes.
     @IBAction func Category(sender: UISegmentedControl) {
         reloadLoadedArrays()
     }

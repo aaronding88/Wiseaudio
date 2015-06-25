@@ -48,6 +48,7 @@ class QuotesCollectionViewCell: UICollectionViewCell, AVAudioPlayerDelegate {
         isPlaying = false
     }
     
+    // TODO: Fix activity.
     // Shares via ActivityViewController. Attempts to exclude certain types of shares.
     @IBAction func shareSound(sender: UIButton) {
         if let urlFile = audioNSUrl {

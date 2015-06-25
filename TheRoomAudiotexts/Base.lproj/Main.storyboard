@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -19,15 +20,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KFW-f9-kfX">
-                                <rect key="frame" x="0.0" y="94" width="600" height="457"/>
+                                <rect key="frame" x="0.0" y="58" width="600" height="493"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vDG-G6-tZF">
-                                    <size key="itemSize" width="310" height="140"/>
+                                    <size key="itemSize" width="160" height="160"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="25"/>
+                                    <inset key="sectionInset" minX="25" minY="15" maxX="0.0" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <imageView key="backgroundView" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_favorites" id="SxT-MZ-2HM">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="457"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="493"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
                                 <cells>
@@ -35,33 +36,17 @@
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="310" height="140"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TalkBubble" translatesAutoresizingMaskIntoConstraints="NO" id="Bzb-un-Q12">
-                                                    <rect key="frame" x="126" y="38" width="184" height="82"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="rnz-7M-Md0">
-                                                    <rect key="frame" x="134" y="15" width="176" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <size key="shadowOffset" width="1" height="1"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quote" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="M5L-RU-Wf2">
-                                                    <rect key="frame" x="153" y="48" width="138" height="60"/>
-                                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="13"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="igc-j4-AWI">
-                                                    <rect key="frame" x="38" y="38" width="80" height="80"/>
+                                                    <rect key="frame" x="38" y="8" width="80" height="80"/>
                                                 </imageView>
                                                 <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="rCd-dW-faC">
-                                                    <rect key="frame" x="145" y="117" width="157" height="3"/>
+                                                    <rect key="frame" x="8" y="151" width="144" height="3"/>
                                                 </progressView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFh-tl-moK">
-                                                    <rect key="frame" x="8" y="87" width="26" height="26"/>
+                                                    <rect key="frame" x="8" y="55" width="26" height="26"/>
                                                     <state key="normal" image="FavoriteFilledIcon">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -69,8 +54,15 @@
                                                         <action selector="removeFromFavorites:" destination="wN3-nr-tZs" eventType="touchUpInside" id="6lv-Of-Zc4"/>
                                                     </connections>
                                                 </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHU-TR-czS">
+                                                    <rect key="frame" x="0.0" y="8" width="40" height="40"/>
+                                                    <state key="normal" image="ShareIcon"/>
+                                                    <connections>
+                                                        <action selector="shareAudio:" destination="wN3-nr-tZs" eventType="touchUpInside" id="sW1-bO-LDc"/>
+                                                    </connections>
+                                                </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCP-76-XHF">
-                                                    <rect key="frame" x="134" y="39" width="176" height="79"/>
+                                                    <rect key="frame" x="38" y="9.5" width="114" height="150.5"/>
                                                     <state key="normal">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -78,13 +70,22 @@
                                                         <action selector="playAudio:" destination="wN3-nr-tZs" eventType="touchUpInside" id="cmU-gm-Wjc"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHU-TR-czS">
-                                                    <rect key="frame" x="0.0" y="37" width="40" height="40"/>
-                                                    <state key="normal" image="ShareIcon"/>
-                                                    <connections>
-                                                        <action selector="shareAudio:" destination="wN3-nr-tZs" eventType="touchUpInside" id="sW1-bO-LDc"/>
-                                                    </connections>
-                                                </button>
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="P1b-Dl-OaZ">
+                                                    <rect key="frame" x="8" y="8" width="176" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <size key="shadowOffset" width="1" height="1"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quote" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="M5L-RU-Wf2">
+                                                    <rect key="frame" x="8" y="84" width="144" height="70"/>
+                                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="13"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <size key="shadowOffset" width="1" height="1"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
@@ -92,7 +93,7 @@
                                             <outlet property="imgLabel" destination="igc-j4-AWI" id="wBn-w8-iLY"/>
                                             <outlet property="progressBar" destination="rCd-dW-faC" id="DeY-cB-eKm"/>
                                             <outlet property="quoteLabel" destination="M5L-RU-Wf2" id="tRC-vH-fep"/>
-                                            <outlet property="titleLabel" destination="rnz-7M-Md0" id="SnX-99-xnd"/>
+                                            <outlet property="titleLabel" destination="P1b-Dl-OaZ" id="ePU-c3-Ktc"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -131,7 +132,7 @@
                             <constraint firstItem="Qfs-9e-7H0" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="30" id="SkK-uU-Uez"/>
                             <constraint firstItem="KFW-f9-kfX" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="Td8-kL-N9W"/>
                             <constraint firstItem="FK0-e0-bUp" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" symbolic="YES" id="eB0-hu-IFI"/>
-                            <constraint firstItem="KFW-f9-kfX" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="94" id="yxV-9a-onT"/>
+                            <constraint firstItem="KFW-f9-kfX" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="58" id="yxV-9a-onT"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="acW-dT-cKf"/>
@@ -153,7 +154,7 @@
             </objects>
             <point key="canvasLocation" x="738" y="-283"/>
         </scene>
-        <!--Sound Library-->
+        <!--Responses-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Wiseaudio" customModuleProvider="target" sceneMemberID="viewController">
@@ -191,7 +192,7 @@
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YfV-ST-7Rv">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YfV-ST-7Rv" customClass="ResponseCollectionView" customModule="Wiseaudio" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="126" width="600" height="425"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tDv-ZW-WGz">
                                     <size key="itemSize" width="310" height="140"/>
@@ -200,7 +201,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="25"/>
                                 </collectionViewFlowLayout>
                                 <imageView key="backgroundView" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" id="5fX-9p-Cpf">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="461"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="425"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
                                 <cells>
@@ -272,9 +273,9 @@
                                     <outlet property="delegate" destination="8rJ-Kc-sve" id="Hg2-IY-E5x"/>
                                 </connections>
                             </collectionView>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Type a title, quote, or character." translatesAutoresizingMaskIntoConstraints="NO" id="1Fv-ry-TVc">
+                            <searchBar contentMode="redraw" barStyle="black" searchBarStyle="minimal" placeholder="Type a title, quote, or character." translatesAutoresizingMaskIntoConstraints="NO" id="1Fv-ry-TVc">
                                 <rect key="frame" x="0.0" y="82" width="600" height="44"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go"/>
                                 <connections>
                                     <outlet property="delegate" destination="8rJ-Kc-sve" id="ruA-7h-OcW"/>
                                 </connections>
@@ -296,15 +297,16 @@
                             <constraint firstItem="YfV-ST-7Rv" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="106" id="xib-6S-725"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Sound Library" image="libraryIcon" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Responses" image="libraryIcon" id="cPa-gy-q4n"/>
                     <connections>
+                        <outlet property="searchBar" destination="1Fv-ry-TVc" id="cb0-B6-9XD"/>
                         <outlet property="segmentedControl" destination="Doc-ac-2De" id="wD3-dA-S5m"/>
                         <outlet property="viewController" destination="YfV-ST-7Rv" id="ihP-wV-pzP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="738" y="374"/>
+            <point key="canvasLocation" x="738" y="278"/>
         </scene>
         <!--Quotes-->
         <scene sceneID="Dpo-fy-6rX">
@@ -318,8 +320,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="h2F-Rb-Nfq">
-                                <rect key="frame" x="0.0" y="90" width="600" height="510"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="h2F-Rb-Nfq" customClass="QuotesCollectionView" customModule="Wiseaudio" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="126" width="600" height="474"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HD8-xp-nyM">
                                     <size key="itemSize" width="310" height="140"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -327,7 +329,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="25"/>
                                 </collectionViewFlowLayout>
                                 <imageView key="backgroundView" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quotesBG" id="4w2-75-Iww">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="510"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="474"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
                                 <cells>
@@ -344,6 +346,9 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TalkBubble" translatesAutoresizingMaskIntoConstraints="NO" id="EZt-So-Lif">
                                                     <rect key="frame" x="126" y="38" width="184" height="82"/>
                                                 </imageView>
+                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="uCk-lc-CEX">
+                                                    <rect key="frame" x="145" y="117.5" width="157" height="2.5"/>
+                                                </progressView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="IMA-R3-6wi">
                                                     <rect key="frame" x="134" y="15" width="176" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -369,9 +374,6 @@
                                                         <action selector="addToFavorites:" destination="fHn-vH-SZO" eventType="touchUpInside" id="Gi7-Hr-Cpo"/>
                                                     </connections>
                                                 </button>
-                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uCk-lc-CEX">
-                                                    <rect key="frame" x="145" y="117" width="157" height="2"/>
-                                                </progressView>
                                                 <button opaque="NO" alpha="0.25" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ung-Vg-m01">
                                                     <rect key="frame" x="134" y="39" width="176" height="79"/>
                                                     <connections>
@@ -402,7 +404,7 @@
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Legendary Quotes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHY-rD-29x">
-                                <rect key="frame" x="229" y="28" width="143" height="22"/>
+                                <rect key="frame" x="230" y="28" width="143" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -427,17 +429,27 @@
                                     <action selector="Category:" destination="u9a-la-G5R" eventType="valueChanged" id="SBg-Ig-uEr"/>
                                 </connections>
                             </segmentedControl>
+                            <searchBar contentMode="redraw" barStyle="black" searchBarStyle="minimal" placeholder="Type a title, quote, or character." translatesAutoresizingMaskIntoConstraints="NO" id="Fmf-Go-Hlx">
+                                <rect key="frame" x="0.0" y="82" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="u9a-la-G5R" id="B7P-3L-5io"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" red="0.47450980390000003" green="0.0" blue="0.050980392159999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="h2F-Rb-Nfq" firstAttribute="top" secondItem="ohV-uE-SiW" secondAttribute="bottom" constant="70" id="7uv-gV-flc"/>
-                            <constraint firstItem="h2F-Rb-Nfq" firstAttribute="top" secondItem="0OK-OH-TbF" secondAttribute="bottom" constant="8" id="815-gM-shh"/>
+                            <constraint firstItem="h2F-Rb-Nfq" firstAttribute="top" secondItem="ohV-uE-SiW" secondAttribute="bottom" constant="106" id="7uv-gV-flc"/>
+                            <constraint firstItem="h2F-Rb-Nfq" firstAttribute="top" secondItem="0OK-OH-TbF" secondAttribute="bottom" constant="44" id="815-gM-shh"/>
                             <constraint firstItem="0OK-OH-TbF" firstAttribute="leading" secondItem="0ql-1Q-ePy" secondAttribute="leadingMargin" id="8Qb-gp-cZz"/>
                             <constraint firstItem="AAQ-Wz-0nJ" firstAttribute="top" secondItem="h2F-Rb-Nfq" secondAttribute="bottom" constant="-49" id="L6u-qs-urV"/>
                             <constraint firstAttribute="centerX" secondItem="ZHY-rD-29x" secondAttribute="centerX" constant="-0.5" id="Pb6-0u-zbl"/>
+                            <constraint firstItem="Fmf-Go-Hlx" firstAttribute="leading" secondItem="0ql-1Q-ePy" secondAttribute="leadingMargin" constant="-16" id="Pdb-eA-B8w"/>
                             <constraint firstItem="0OK-OH-TbF" firstAttribute="trailing" secondItem="0ql-1Q-ePy" secondAttribute="trailingMargin" id="Sdy-0H-h23"/>
+                            <constraint firstItem="h2F-Rb-Nfq" firstAttribute="top" secondItem="Fmf-Go-Hlx" secondAttribute="bottom" id="TDo-zY-g4I"/>
                             <constraint firstAttribute="trailingMargin" secondItem="h2F-Rb-Nfq" secondAttribute="trailing" constant="-16" id="eVV-Ul-dE0"/>
                             <constraint firstItem="ZHY-rD-29x" firstAttribute="top" secondItem="ohV-uE-SiW" secondAttribute="bottom" constant="8" symbolic="YES" id="qFh-Wn-zgJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fmf-Go-Hlx" secondAttribute="trailing" constant="-16" id="wfM-vZ-8FR"/>
                             <constraint firstItem="h2F-Rb-Nfq" firstAttribute="leading" secondItem="0ql-1Q-ePy" secondAttribute="leadingMargin" constant="-16" id="yua-75-JiZ"/>
                         </constraints>
                     </view>
@@ -446,6 +458,7 @@
                     </tabBarItem>
                     <connections>
                         <outlet property="collectionView" destination="h2F-Rb-Nfq" id="8pB-ng-y6r"/>
+                        <outlet property="searchBar" destination="Fmf-Go-Hlx" id="5FA-Fs-H8S"/>
                         <outlet property="segmentedControl" destination="0OK-OH-TbF" id="MKz-hm-md3"/>
                     </connections>
                 </viewController>

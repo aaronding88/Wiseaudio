@@ -25,7 +25,7 @@ class AudioList {
     func loadAudio(titleText: String, descriptionText: String, fileNameText: String, imgNameText: String, isQuote: Bool, isResponse: Bool) {
         let defaults = NSUserDefaults.standardUserDefaults()
         
-        //TODO: isQuote and isResponse should be programatically changed.
+        // Temp audio creates an audio object with the properties passed in, and then appends it to the array.
         var tempAudio = AudioObject(title: titleText, audioDescription: descriptionText, fileName: fileNameText, imgName: imgNameText, favorite: defaults.boolForKey(titleText), isQuote: isQuote, isResponse: isResponse)
         if (defaults.boolForKey(titleText)) {
             favoritesArray.append(tempAudio)
@@ -37,7 +37,7 @@ class AudioList {
     func loadAudio(titleText: String, descriptionText: String, fileNameText: String, imgNameText: String, isQuote: Bool, isResponse: Bool, category: String) {
         let defaults = NSUserDefaults.standardUserDefaults()
         
-        //TODO: isQuote and isResponse should be programatically changed.
+        // Temp audio creates an audio object with the properties passed in, and then appends it to the array.
         var tempAudio = AudioObject(title: titleText, audioDescription: descriptionText, fileName: fileNameText, imgName: imgNameText, favorite: defaults.boolForKey(titleText), isQuote: isQuote, isResponse: isResponse, category: category)
         if (defaults.boolForKey(titleText)) {
             favoritesArray.append(tempAudio)
@@ -72,7 +72,7 @@ class AudioList {
     }
     // By default, init will find audio files and append them to the Audio Array.
     init() {
-        
+        // TODO: Add more quotes, edit current ones.
         // By loading the strings into these categories, if any category changes strings, we won't have to edit the strings down this entire section.
         let friendly : String = categories[0], positive = categories[1], upset = categories[2], negative = categories[3], neutral = categories[4]
         
