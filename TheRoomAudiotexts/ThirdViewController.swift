@@ -53,6 +53,7 @@ class ThirdViewController: UIViewController, UICollectionViewDataSource, UIColle
             soundList.loadQuotesArrayExceptions(true)
             println("Segmented controls: Default was loaded")
         }
+        self.view.endEditing(true)
         collectionView.reloadData()
     }
     

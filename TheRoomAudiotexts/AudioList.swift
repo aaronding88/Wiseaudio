@@ -82,12 +82,12 @@ class AudioList {
         loadAudio("Voyeur Denny!", descriptionText: "\"I just like to watch you guys.\"", fileNameText: "Denny_WatchYouGuys", imgNameText: "DennyIcon.\(fileType)", isQuote: true, isResponse: true, category: neutral)
         
         // Load Friend Elements
-        loadAudio("Florist's low standards.", descriptionText: "\"You're my favorite customer.\"", fileNameText: "Florist_FavoriteCustomer", imgNameText: "Friend01Icon.\(fileType)", isQuote: true, isResponse: true, category: friendly)
+        loadAudio("Florist's low standards.", descriptionText: "\"You're my favorite customer.\"", fileNameText: "Florist_FavoriteCustomer", imgNameText: "FloristIcon.\(fileType)", isQuote: true, isResponse: true, category: friendly)
         loadAudio("Like a poet.", descriptionText: "\"Did you know that chocolate is the symbol of love?\"", fileNameText: "Friend01_ChocolateSymbolism", imgNameText: "Friend01Icon.\(fileType)", isQuote: true, isResponse: false)
         loadAudio("A grown up date", descriptionText: "\"I gotta go see Michelle in a little bit to make out with her.\"", fileNameText: "Friend01_MakeOut", imgNameText: "Friend01Icon.\(fileType)", isQuote: true, isResponse: false)
-        loadAudio("An Atomic Simile", descriptionText: "\"I feel like I'm sitting on an atomic bomb waiting for it to go off.\"", fileNameText: "Friend02_AtomicSimile", imgNameText: "Friend01Icon.\(fileType)", isQuote: true, isResponse: true, category: upset)
-        loadAudio("Chris R. is in a hurry.", descriptionText: "\"Five minutes? You want five fucking minutes Denny? You know what? I haven't got FIVE FUCKING MINUTES!\"", fileNameText: "ChrisR_InAHurry", imgNameText: "Friend01Icon.\(fileType)", isQuote: true, isResponse: false)
-        loadAudio("Chris R: Rooftop Hustler.", descriptionText: "\"WHERE'S MY FUCKING MONEY DENNY?!\"", fileNameText: "ChrisR_WheresMyMoney", imgNameText: "Friend01Icon.\(fileType)", isQuote: true, isResponse: false)
+        loadAudio("An Atomic Simile", descriptionText: "\"I feel like I'm sitting on an atomic bomb waiting for it to go off.\"", fileNameText: "Friend02_AtomicSimile", imgNameText: "Friend02Icon.\(fileType)", isQuote: true, isResponse: true, category: upset)
+        loadAudio("Chris R. is in a hurry.", descriptionText: "\"Five minutes? You want five fucking minutes Denny? You know what? I haven't got FIVE FUCKING MINUTES!\"", fileNameText: "ChrisR_InAHurry", imgNameText: "ChrisRIcon.\(fileType)", isQuote: true, isResponse: false)
+        loadAudio("Chris R: Rooftop Hustler.", descriptionText: "\"WHERE'S MY FUCKING MONEY DENNY?!\"", fileNameText: "ChrisR_WheresMyMoney", imgNameText: "ChrisRIcon.\(fileType)", isQuote: true, isResponse: false)
         loadAudio("Casual Breast Cancer", descriptionText: "\"I got the results of the test back, I definitely have breast cancer.\"", fileNameText: "Claudette_BreastCancer", imgNameText: "ClaudetteIcon.\(fileType)", isQuote: true, isResponse: false)
         loadAudio("Marriage Counseling.", descriptionText: "\"Marriage has nothing to do with love.\"", fileNameText: "Claudette_MarriageAdvice", imgNameText: "ClaudetteIcon.\(fileType)", isQuote: true, isResponse: false)
         

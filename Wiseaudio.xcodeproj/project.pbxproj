@@ -24,6 +24,9 @@
 		F9652A0E1B0D667200ABAF95 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9652A0D1B0D667200ABAF95 /* Images.xcassets */; };
 		F9657F651B3BC46D0016BBC0 /* ResponseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9657F641B3BC46D0016BBC0 /* ResponseCollectionView.swift */; };
 		F9657F671B3BD01F0016BBC0 /* QuotesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9657F661B3BD01F0016BBC0 /* QuotesCollectionView.swift */; };
+		F97040271B4494690026E6D3 /* ChrisRIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F97040241B4494690026E6D3 /* ChrisRIcon.png */; };
+		F97040281B4494690026E6D3 /* FloristIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F97040251B4494690026E6D3 /* FloristIcon.png */; };
+		F97040291B4494690026E6D3 /* Friend02Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F97040261B4494690026E6D3 /* Friend02Icon.png */; };
 		F98257241B093CF300D0456D /* Claudette.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F982571D1B093CF300D0456D /* Claudette.jpg */; };
 		F98257251B093CF300D0456D /* Denny.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F982571E1B093CF300D0456D /* Denny.jpg */; };
 		F98257261B093CF300D0456D /* Friend01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F982571F1B093CF300D0456D /* Friend01.jpg */; };
@@ -127,6 +130,9 @@
 		F9652A0D1B0D667200ABAF95 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 		F9657F641B3BC46D0016BBC0 /* ResponseCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseCollectionView.swift; sourceTree = "<group>"; };
 		F9657F661B3BD01F0016BBC0 /* QuotesCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesCollectionView.swift; sourceTree = "<group>"; };
+		F97040241B4494690026E6D3 /* ChrisRIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChrisRIcon.png; sourceTree = "<group>"; };
+		F97040251B4494690026E6D3 /* FloristIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FloristIcon.png; sourceTree = "<group>"; };
+		F97040261B4494690026E6D3 /* Friend02Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Friend02Icon.png; sourceTree = "<group>"; };
 		F982571D1B093CF300D0456D /* Claudette.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Claudette.jpg; sourceTree = "<group>"; };
 		F982571E1B093CF300D0456D /* Denny.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Denny.jpg; sourceTree = "<group>"; };
 		F982571F1B093CF300D0456D /* Friend01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Friend01.jpg; sourceTree = "<group>"; };
@@ -374,6 +380,9 @@
 		F982573B1B09484600D0456D /* QuickImages */ = {
 			isa = PBXGroup;
 			children = (
+				F97040241B4494690026E6D3 /* ChrisRIcon.png */,
+				F97040251B4494690026E6D3 /* FloristIcon.png */,
+				F97040261B4494690026E6D3 /* Friend02Icon.png */,
 				F98257AC1B0C049D00D0456D /* ClaudetteIcon.png */,
 				F98257AD1B0C049D00D0456D /* DennyIcon.png */,
 				F98257AE1B0C049D00D0456D /* Friend01Icon.png */,
@@ -487,6 +496,7 @@
 				F98257A91B0A8EAA00D0456D /* Johnny_StupidMother.mp4 in Resources */,
 				F98257AA1B0A8EAA00D0456D /* Johnny_TakeANap.mp4 in Resources */,
 				F98257AB1B0A8EAA00D0456D /* Johnny_TastesGood.mp4 in Resources */,
+				F97040281B4494690026E6D3 /* FloristIcon.png in Resources */,
 				F98257961B0A8E7300D0456D /* Johnny_AnythingForMyPrincess.mp4 in Resources */,
 				F98257971B0A8E7300D0456D /* Johnny_BankBetrayed.mp4 in Resources */,
 				F98257981B0A8E7300D0456D /* Johnny_Cheep01.mp4 in Resources */,
@@ -521,6 +531,7 @@
 				F98257B31B0C049D00D0456D /* ClaudetteIcon.png in Resources */,
 				F98257261B093CF300D0456D /* Friend01.jpg in Resources */,
 				F964020E1B003A4400F30F89 /* Main.storyboard in Resources */,
+				F97040271B4494690026E6D3 /* ChrisRIcon.png in Resources */,
 				F98257B91B0C049D00D0456D /* PeterIcon.png in Resources */,
 				F96402131B003A4400F30F89 /* LaunchScreen.xib in Resources */,
 				F98257801B0A8E2200D0456D /* Lisa_DetectiveLisa1.mp4 in Resources */,
@@ -542,6 +553,7 @@
 				F98257941B0A8E3F00D0456D /* Mark_StupidComments.mp4 in Resources */,
 				F982578D1B0A8E2F00D0456D /* Lisa_WhyHesBoring.mp4 in Resources */,
 				F98257B41B0C049D00D0456D /* DennyIcon.png in Resources */,
+				F97040291B4494690026E6D3 /* Friend02Icon.png in Resources */,
 				F98257B81B0C049D00D0456D /* MarkIcon.png in Resources */,
 				F982572A1B093CF300D0456D /* Peter.jpg in Resources */,
 				F98257251B093CF300D0456D /* Denny.jpg in Resources */,
@@ -708,7 +720,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = Wiseaudio;
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -723,7 +735,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = Wiseaudio;
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

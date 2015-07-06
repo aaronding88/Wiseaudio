@@ -48,10 +48,10 @@ class QuotesCollectionViewCell: UICollectionViewCell, AVAudioPlayerDelegate {
         isPlaying = false
     }
     
-    // TODO: Fix activity.
     // Shares via ActivityViewController. Attempts to exclude certain types of shares.
     @IBAction func shareSound(sender: UIButton) {
         if let urlFile = audioNSUrl {
+            // Casts the urlFile into an array, allowing it to be used in UIActivityViewController.
             let fixedFile = [urlFile]
             let activityVC = UIActivityViewController(activityItems: fixedFile, applicationActivities: nil)
             if (viewController != nil) {
@@ -59,7 +59,17 @@ class QuotesCollectionViewCell: UICollectionViewCell, AVAudioPlayerDelegate {
                 // Excludes the following: Reading list, Copy to pasteboard, Vimeo, Print, Saving, Airdrop.
                 //#Explanation: The purpose isn't to encourage saving audio, though it will be possible. The idea
                 // is that we want the App to contain all the files, not the phone.
-                activityVC.excludedActivityTypes = [UIActivityTypeAddToReadingList, UIActivityTypeCopyToPasteboard, UIActivityTypePostToVimeo, UIActivityTypePrint, UIActivityTypeSaveToCameraRoll, UIActivityTypeAirDrop]
+                activityVC.excludedActivityTypes = [
+                    UIActivityTypePostToWeibo,
+                    UIActivityTypeMail,
+                    UIActivityTypePrint,
+                    UIActivityTypeCopyToPasteboard,
+                    UIActivityTypeAssignToContact,
+                    UIActivityTypeSaveToCameraRoll,
+                    UIActivityTypeAddToReadingList,
+                    UIActivityTypePostToFlickr,
+                    UIActivityTypePostToVimeo,
+                    UIActivityTypePostToTencentWeibo]
             } else {
                 println("No View Controller passed!")
             }
